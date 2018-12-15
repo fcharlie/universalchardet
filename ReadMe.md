@@ -1,0 +1,1 @@
+# Universal Chardet Single
