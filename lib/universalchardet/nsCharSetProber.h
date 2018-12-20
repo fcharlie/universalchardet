@@ -5,7 +5,7 @@
 #ifndef nsCharSetProber_h__
 #define nsCharSetProber_h__
 
-#include "nscore.h"
+#include <cstdint>
 
 //#define DEBUG_chardet // Uncomment this for debug dump.
 

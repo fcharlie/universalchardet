@@ -5,7 +5,7 @@
 #ifndef nsCodingStateMachine_h__
 #define nsCodingStateMachine_h__
 
-#include "mozilla/ArrayUtils.h"
+//#include "mozilla/ArrayUtils.h"
 
 #include "nsPkgInt.h"
 

@@ -5,7 +5,7 @@
 
 #ifndef nsPkgInt_h__
 #define nsPkgInt_h__
-#include "nscore.h"
+#include <cstdint>
 
 typedef enum { eIdxSft4bits = 3, eIdxSft8bits = 2, eIdxSft16bits = 1 } nsIdxSft;
 

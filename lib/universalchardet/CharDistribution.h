@@ -6,7 +6,14 @@
 #ifndef CharDistribution_h__
 #define CharDistribution_h__
 
-#include "nscore.h"
+#include <stdint.h>
+#include <cstddef>
+
+template <typename T, size_t N>
+size_t ArrayLength(T (&arr)[N]) {
+  (void)arr;
+  return N;
+}
 
 #define ENOUGH_DATA_THRESHOLD 1024
 
