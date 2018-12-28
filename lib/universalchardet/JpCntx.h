@@ -8,7 +8,7 @@
 
 #define NUM_OF_CATEGORY 6
 
-#include "nscore.h"
+#include <cstdint>
 
 #define ENOUGH_REL_THRESHOLD 100
 #define MAX_REL_THRESHOLD 1000

@@ -4,7 +4,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 #include "nsLatin1Prober.h"
-#include <stdio.h>
+#include <cstdio>
+#include <cstdlib>
 
 #define UDF 0        // undefined
 #define OTH 1        // other

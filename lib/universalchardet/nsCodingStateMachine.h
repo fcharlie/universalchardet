@@ -41,7 +41,7 @@ class nsCodingStateMachine {
     uint32_t byteCls = GETCLASS(c);
     if (mCurrentState == eStart) {
       mCurrentBytePos = 0;
-      MOZ_ASSERT(byteCls < mModel->charLenTableLength);
+
       mCurrentCharLen = mModel->charLenTable[byteCls];
     }
     // from byte's class and stateTable, we get its next state

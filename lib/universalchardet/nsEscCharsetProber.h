@@ -5,10 +5,9 @@
 
 #ifndef nsEscCharSetProber_h__
 #define nsEscCharSetProber_h__
-
+#include <memory>
 #include "nsCharSetProber.h"
 #include "nsCodingStateMachine.h"
-#include "nsAutoPtr.h"
 
 class nsEscCharSetProber : public nsCharSetProber {
  public:
@@ -23,7 +22,7 @@ class nsEscCharSetProber : public nsCharSetProber {
  protected:
   void GetDistribution(uint32_t aCharLen, const char* aStr);
 
-  nsAutoPtr<nsCodingStateMachine> mCodingSM;
+  std::shared_ptr<nsCodingStateMachine> mCodingSM;
   nsProbingState mState;
   const char* mDetectedCharset;
 };

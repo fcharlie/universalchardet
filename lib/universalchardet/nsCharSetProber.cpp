@@ -4,7 +4,7 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 #include "nsCharSetProber.h"
-
+#include <cstdlib>
 // This filter applies to all scripts which do not use English characters
 bool nsCharSetProber::FilterWithoutEnglishLetters(const char* aBuf,
                                                   uint32_t aLen, char** newBuf,

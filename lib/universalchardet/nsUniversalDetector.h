@@ -6,6 +6,10 @@
 #ifndef nsUniversalDetector_h__
 #define nsUniversalDetector_h__
 
+#include <cstdint>
+
+enum nsresult : uint32_t { NS_OK = 0, NS_ERROR_OUT_OF_MEMORY = 0x8007000e };
+
 class nsCharSetProber;
 
 #define NUM_OF_CHARSET_PROBERS 3

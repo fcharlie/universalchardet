@@ -7,7 +7,7 @@
 #include "nsUniversalDetector.h"
 
 nsEscCharSetProber::nsEscCharSetProber() {
-  mCodingSM = new nsCodingStateMachine(&ISO2022JPSMModel);
+  mCodingSM = std::make_shared<nsCodingStateMachine>(&ISO2022JPSMModel);
   mState = eDetecting;
   mDetectedCharset = nullptr;
 }
